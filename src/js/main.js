@@ -23,4 +23,3 @@ fetch(url)
 
 e.preventDefault();
 }
-pokemonGet()

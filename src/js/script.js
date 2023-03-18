@@ -20,6 +20,5 @@ fetch(url)
       </div>
   `
 }) .catch((error) => console.log(error))
-
 e.preventDefault();
 }

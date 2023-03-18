@@ -55,14 +55,17 @@ textarea:focus, input:focus, select:focus {
   display: none;
 }
 
+.border {
+  background-color: red;
+  border: 10px solid #b8a10d;
+  border-radius: 15px;
+}
+
 .pokebox {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px 30px;
-  background-color: red;
-  border: 10px solid #b8a10d;
-  border-radius: 15px;
 }
 .pokebox-container {
   display: flex;

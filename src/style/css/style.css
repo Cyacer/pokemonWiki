@@ -60,13 +60,13 @@ textarea:focus, input:focus, select:focus {
   flex-direction: column;
   align-items: center;
 }
-box .pokebox-container {
+.pokebox-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   padding-top: 50px;
 }
-box .pokebox-container p {
+.pokebox-container p {
   text-shadow: 1px -1px 0 #000;
 }
 .pokebox-img {

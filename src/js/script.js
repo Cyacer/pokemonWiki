@@ -6,7 +6,7 @@ document.addEventListener('keypress',(e) => {
 })
 function pokemonGet(e){
 let endpoints = document.querySelector('#pokemonName').value.toLowerCase();
-const url = `https://pokeapi.co/api/v2/pokemon/ditto`;
+const url = `https://pokeapi.co/api/v2/pokemon/${endpoints}`;
 fetch(url)
 .then((res) => res.json())
 .then((data) => {

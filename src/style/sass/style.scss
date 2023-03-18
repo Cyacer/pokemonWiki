@@ -57,19 +57,33 @@ textarea:focus, input:focus, select:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 30px;
+  background-color: red;
+  border: 10px solid #b8a10d;
+  border-radius: 15px;
   &-container{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
     & p{
-      text-shadow:1px -1px 0 #000 ;
+      text-shadow:1px -1px 0 #000;
+      padding-left: 160px;
     }
   }
   &-img{
     max-width: 100%;
-    width: 50%;
+    width: 80%;
+    background-color: #fefefe;
+    border-radius: 15px;
+    box-shadow:3px 2px 0 rgba(0,0,0,.4);
   }
+}
+.pokebox-espec{
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+padding: 10px;
+text-shadow:1px -1px 0 #000;
 }
 #preloader{
   height: 100vh;

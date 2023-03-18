@@ -1,5 +1,4 @@
 document.querySelector('#search').addEventListener('click',pokemonGet)
-
 function pokemonGet(e){
 let endpoints = document.querySelector('#pokemonName').value;
 const url = `https://pokeapi.co/api/v2/pokemon/${endpoints}`;

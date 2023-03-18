@@ -1,7 +1,12 @@
-document.querySelector('#search').addEventListener('click',pokemonGet)
+/*document.addEventListener('keypress',(e) => {
+  if(e.key === 'Enter'){
+    const btn = document.querySelector('#search');
+    btn.click();
+  }
+})*/
 function pokemonGet(e){
-let endpoints = document.querySelector('#pokemonName').value;
-const url = `https://pokeapi.co/api/v2/pokemon/${endpoints}`;
+//let endpoints = document.querySelector('#pokemonName').value.toLowerCase();
+const url = `https://pokeapi.co/api/v2/pokemon/ditto`;
 fetch(url)
 .then((res) => res.json())
 .then((data) => {
@@ -11,7 +16,7 @@ fetch(url)
   document.querySelector('.pokebox').innerHTML = `
       <div class='pokebox-container'>
         <p>#${data.id}</p>
-        <img class='pokebox-img' src="${data.sprites.other["official-artwork"].front_default}" alt="imagem do ${endpoints}" />
+        <img class='pokebox-img' src="${data.sprites.other["official-artwork"].front_default}" alt="imagem do " />
       </div>
       <div>
         <p>Nome:${nome.charAt(0).toUpperCase() + nome.slice(1)}</p>
@@ -19,6 +24,7 @@ fetch(url)
         <p>Peso: ${peso.toLocaleString('pt-BR')} kg</p>
       </div>
   `
+  e.preventDefault();
 }) .catch((error) => console.log(error))
-e.preventDefault();
 }
+pokemonGet()

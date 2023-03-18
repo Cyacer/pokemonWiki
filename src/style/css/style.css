@@ -11,12 +11,24 @@ body {
   font-size: 100%;
   list-style-type: none;
   background-color: #ffde00;
+  font-family: "Fredoka One", cursive;
+  color: #fefefe;
 }
 
 textarea:focus, input:focus, select:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
+}
+
+.main-titulo {
+  position: relative;
+}
+.main-titulo h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #3b4cca;
+  text-shadow: 3px -1px 0 #fff;
 }
 
 .search-container {
@@ -26,13 +38,21 @@ textarea:focus, input:focus, select:focus {
   padding-top: 30px;
   gap: 10px;
 }
-.search-input {
+
+#pokemonName {
   border-radius: 15px;
   border: none;
-  padding: 1px 5px;
+  padding: 3px 5px;
+  font-size: 1.35rem;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
 }
-.search-input:focus {
+#pokemonName:focus {
   outline: 3px solid #3b4cca;
+}
+
+#search {
+  display: none;
 }
 
 .pokebox {
@@ -42,11 +62,22 @@ textarea:focus, input:focus, select:focus {
 }
 .pokebox-container {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
+  padding-top: 50px;
+}
+.pokebox-container p {
+  text-shadow: 1px -1px 0 #000;
 }
 .pokebox-img {
   max-width: 100%;
   width: 50%;
+}
+
+#preloader {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
 }
 
 /*# sourceMappingURL=style.css.map */

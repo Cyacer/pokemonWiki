@@ -5,15 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma Wikipédia Pokemon, aonde se pode pesquisar só qualquer pokemon...">
+  <link rel="shortcut icon" href="src/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/style/css/style.css">
-  <title>PokeWiki</title>
+  <title>PokéWiki</title>
 </head>
 
 <body>
-  <main>
-    <div  class="search-container">
-      <input class="search-input" type="text" id="pokemonName">
-      <button class="search-button" onclick="pokemonGet()" id="search">Pesquisar</button>
+  <a href="pokemon.html">fvrvrve</a>
+  <main class="main">
+    <div class="main-titulo" id="inicio">
+      <h1>Wikipédia Pokémon</h1>
+    </div>
+    <div class="search-container">
+      <input type="text"  id="pokemonName" placeholder="Pesquisa...">
+      <button onclick="pokemonGet()" id="search"></button>
     </div>
     <div class="pokebox">
     </div>
